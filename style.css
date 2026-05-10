@@ -277,6 +277,7 @@ header p {
 .contactme {
     text-align: center;
     min-height: 50vh;
+    text-shadow: var(--shadowbiasa);
 }
 
 .contactme h2 {
@@ -299,7 +300,7 @@ header p {
     margin-top: 2rem;
 }
 
-.contactbuttons a {
+.contactbuttonsindex a {
     display: inline-block;
     padding: var(--paddingbiasa);
     border-radius: var(--radiusbiasa);
@@ -307,6 +308,7 @@ header p {
     font-weight: 600;
     box-shadow: var(--shadowbiasa);
     color: var(--putih);
+    background: linear-gradient(var(--pinkgelap), var(--pinkmedium));
 }
 
 .bloghtml {
@@ -324,7 +326,6 @@ header p {
     overflow: hidden;
     background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadowbiasa);
 }
 
@@ -485,4 +486,254 @@ header p {
     font-weight: 600;
     box-shadow: var(--shadowbiasa);
     align-self: flex-start;
+}
+
+.gallerypage {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-shadow: var(--shadowbiasa);
+}
+
+.gallerypageheader {
+    text-align: center;
+}
+
+.gallerypageheader h1 {
+    font-family: "Pinyon Script", cursive;
+    font-size: 80px;
+    color: var(--ijo);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.gallerypageheader p {
+    color: var(--pinkgelap);
+    font-style: italic;
+    margin: 0;
+}
+
+.susun {
+    columns: 3;
+    column-gap: 1rem;
+}
+
+.susunitem {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    border-radius: var(--radiusbiasa);
+    overflow: hidden;
+    box-shadow: var(--shadowbiasa);
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+}
+
+.susunitem img,
+.susunitem video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.contactpage {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.contactheader {
+    text-align: center;
+}
+
+.contactheader h1 {
+    font-family: "Pinyon Script", cursive;
+    font-size: 80px;
+    color: var(--ijo);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.contactheader p {
+    color: var(--pinkgelap);
+    font-style: italic;
+    margin: 0;
+}
+
+.contactbody {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.biodata {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadowbiasa);
+}
+
+.biodataphoto {
+    width: 180px;
+    aspect-ratio: 3 / 4;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: var(--radiusbiasa);
+    box-shadow: var(--shadowbiasa);
+}
+
+.biodataphoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.biodatatext h2 {
+    font-family: "Pinyon Script", cursive;
+    font-size: 45px;
+    color: var(--ijo);
+    margin: 0 0 1rem;
+    line-height: 1.1;
+}
+
+.biodatatable {
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--coklat);
+}
+
+.biodatatable td {
+    padding: 0.4rem 1rem 0.4rem 0;
+    vertical-align: top;
+}
+
+.biodatatable td:first-child {
+    color: var(--pinkgelap);
+    font-style: italic;
+    white-space: nowrap;
+    padding-right: 2rem;
+}
+
+.reachout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.reachout h2 {
+    font-family: "Pinyon Script", cursive;
+    font-size: 50px;
+    color: var(--ijo);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.reachout > p {
+    color: var(--pinkgelap);
+    font-style: italic;
+    margin: 0;
+}
+
+.contactbuttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactbuttons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radiusbiasa);
+    box-shadow: var(--shadowbiasa);
+    text-decoration: none;
+    min-width: 200px;
+    text-align: center;
+}
+
+.contactlabel {
+    color: var(--pinkgelap);
+    font-style: italic;
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+.contactvalue {
+    text-align: center;
+    color: var(--coklat);
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* scroll fade in */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* lightbox */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.open {
+    display: flex;
+}
+
+#lightboxinner {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+#lightboximg {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    display: block;
+}
+
+#lightboxclose {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
